@@ -7,7 +7,7 @@ function harperSaveMessage(message, username, room) {
 
   var data = JSON.stringify({
     operation: 'insert',
-    schema: 'realtime_chat_app',
+    schema: 'slack_clone',
     table: 'messages',
     records: [
       {
