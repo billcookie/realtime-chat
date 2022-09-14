@@ -1,0 +1,135 @@
+.organisations-side-bar {
+  background-color: rgb(208, 153, 50);
+  padding: 16px;
+  text-align: center;
+  height: 100vh;
+}
+
+.side-bar-active {
+  padding: 8px;
+  background-color: #514951;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.side-bar-inactive {
+  background-color: #444245;
+  color: white;
+  padding: 8px;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.side-bar-add-org {
+  color: rgb(240, 240, 240);
+  padding: 8px;
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .5s;
+  opacity: 0.8;
+}
+
+.side-bar-inactive:hover{
+  opacity: 1;
+}
+
+.side-bar-add-org:hover {
+  opacity: 1;
+  background-color: #444245;
+}
+
+.channels-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.channels-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.direct-message-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.direct-message-header h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.channel {
+  display: flex;
+  align-items: center;
+}
+
+.channel-active i {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.channel i {
+  margin-right: 4px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.channel span {
+  opacity: 0.7;
+  transition: .5s;
+}
+
+.channel span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+}
+
+.person span {
+  opacity: 0.7;
+  transition: .5s;
+}
+
+.person span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.online-circle-active {
+  background-color: #37e5bd;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin-right: 8px;
+}
+
+.online-circle-inactive {
+  background-color: #a59ca4;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin-right: 8px;
+}
+
+.communications-side-bar {
+  padding: 16px;
+  background-color: rgb(75, 75, 75);
+  color: rgb(244, 244, 244);
+  flex-shrink: 0;
+  width: 200px;
+  height: 100vh;
+}
+
+.side-bar-info {
+  margin-top: 24px;
+}

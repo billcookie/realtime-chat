@@ -55,15 +55,20 @@ const Messages = ({ socket }) => {
 
   return (
 
-    <div className="messagesContainer" ref={messagesColumnRef}>
-        <div className="messagesHeader">
-        <h1><i class="fa-brands fa-galactic-republic"></i>orders</h1>
+    <div className="messages-container" ref={messagesColumnRef}>
+        <div className="messages-header">
+        <h1 className={styles.roomTitle}><i class="fa-brands fa-galactic-republic"></i></h1>
       </div>
-      <div className="messageConversations">
+      <div className="message-container">
       {messagesRecieved.map((msg, i) => (
         <div className={styles.message} key={i}>
+          <div className='d-flex justify-content-between'>
+
+          <img class="message-img" src={require("./storm-trooper-img.png")} />
+          <p> {msg.username}</p>
+          </div>
           <div className="messageContent"style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <p>{msg.username}</p>
+
             <span className={styles.msgMeta}>
               {formatDateFromTimestamp(msg.__createdtime__)}
             </span>
